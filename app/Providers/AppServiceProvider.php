@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
         if( Schema::hasTable('categores')) {
             View::share('categores', $this->shareCategories());
         }
-        if (\App::enviroment(['production'])){
+        if (\App::environment(['production'])){
             \URL::forceScheme('https');
         }
     }
