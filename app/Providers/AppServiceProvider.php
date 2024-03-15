@@ -25,9 +25,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();    
         Paginator::useBootstrapFour();
-        if( Schema::hasTable('categores')) {
+    /*    if( Schema::hasTable('categores')) {
             View::share('categores', $this->shareCategories());
-        }
+        }*/
         if (\App::enviroment(['production'])){
             \URL::forceScheme('https');
         }
