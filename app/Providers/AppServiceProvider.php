@@ -24,7 +24,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();    
         Paginator::useBootstrapFour();
-       // View::share('categores', $this->shareCategories());
+        if( Schema::hasTable('categores')) {
+            View::share('categores', $this->shareCategories());
+        }
     }
 //zanpが壊れるとここが重要
     private function shareCategories() {
