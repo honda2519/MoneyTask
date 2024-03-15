@@ -16,9 +16,7 @@ return new class extends Migration
             $table->date('date');
             $table->integer('category_id');
             $table->integer('price');
-            $table->integer('created_at');
-            $table->integer('updated_at');
-            $table->timestamps();
+           $table->timestamps();
         });
     }
 
