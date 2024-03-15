@@ -28,6 +28,9 @@ class AppServiceProvider extends ServiceProvider
         if( Schema::hasTable('categores')) {
             View::share('categores', $this->shareCategories());
         }
+        if (\App::enviroment(['production'])){
+            \URL::forceScheme('https');
+        }
     }
 //zanpが壊れるとここが重要
     private function shareCategories() {
