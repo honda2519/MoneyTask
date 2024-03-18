@@ -92,7 +92,7 @@
                 @if($errors->has('category')) <span class="error">{{$errors->first('category')}}</span> @endif
 
                 <label for="price">金額:</label>
-                <input type="text" id="price" name="price">
+                <input type="text" id="price" name="price"maxlength="7">
                 @if($errors->has('price')) <span class="error">{{$errors->first('price')}}</span> @endif
 
                 <button type="submit">追加</button>
