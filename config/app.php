@@ -16,8 +16,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-
+    'name' => env('APP_NAME', 'MoneyTask'),
+    //    'name' => env('APP_NAME', '??')に変更？,元Larave
     /*
     |--------------------------------------------------------------------------
     | Application Environment
